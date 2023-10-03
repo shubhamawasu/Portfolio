@@ -1,0 +1,199 @@
+<!DOCTYPE html> <!-- Document type declaration -->
+<html lang="en"> <!-- Opening <html> tag with language attribute -->
+
+<head> <!-- The document's head section -->
+    <meta charset="UTF-8"> <!-- Character encoding declaration -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Viewport meta tag for responsive design -->
+    <title>Personal Portfolio</title> <!-- Title of the page, displayed in the browser's title bar -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a911121ee5.js" crossorigin="anonymous"></script>
+</head>
+
+<body> <!-- The document's body section -->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="name-user">Shu<span>bham<span></h1>
+
+                <ul id="sidemenu">
+                    <li>  <i class="fa-solid fa-xmark" onclick="closeSideNav()"></i></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openSideNav()"></i>
+            </nav>
+            <div class="header-class">
+                <p>Full Stack Developer</p>
+                <h1>Hi I'm <span>Shubham</span><br>Wasu from india</h1>
+            </div>
+        </div>
+    </div>
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/background1.png">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p>As a Full Stack Developer at [Company Name],<br> you will be responsible for designing,
+                        developing,<br> and maintaining both front-end and back-end applications,<br> contributing to
+                        the entire software development lifecycle.<br> You will work closely with cross-functional
+                        teams<br> to understand project requirements, develop high-quality<br> code, and deliver
+                        innovative solutions to <br>meet our clients' needs.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skill')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experiance')">Experiance</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-content active-tab" id="skill">
+                        <ul>
+                            <li><span>Web development</span><br>Web Devloper</li>
+                            <li><span>Coder</span><br>Competative programming</li>
+                            <li><span>Backend Analysis</span><br>Debugging backend</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="experiance">
+                        <ul>
+                            <li><span>Cognizant</span><br>Web Devloper</li>
+                            <li><span>Blue Altair</span><br>Competative programming</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="education">
+                        <ul>
+                            <li><span>GCOEA</span><br>Coputer science</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="Services">
+        <div class="container">
+            <div>
+                <h1 id="sub-title">My Services</h1>
+                <div class="Services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2> Web Development </h2>
+                        <p>We design and develop fully customized websites that reflect your brand's identity and meet
+                            your specific requirements. Whether you need a simple brochure site or a complex e-commerce
+                            platform, we've got you covered.</p>
+                        <a>learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2> App Development </h2>
+                        <p>We design and develop fully customized websites that reflect your brand's identity and meet
+                            your specific requirements. Whether you need a simple brochure site or a complex e-commerce
+                            platform, we've got you covered.</p>
+                        <a>learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-terminal"></i>
+                        <h2> Coding Solutions</h2>
+                        <p>We design and develop fully customized websites that reflect your brand's identity and meet
+                            your specific requirements. Whether you need a simple brochure site or a complex e-commerce
+                            platform, we've got you covered.</p>
+                        <a>learn more</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <div>
+                <h1 id="sub-title">Portfolio</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Social Media</h3>
+                            <p>App connects you talented people around world .please download it from play store</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Transport APP</h3>
+                            <p>App connects you talented people around world .please download it from play store</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Online Shopping App</h3>
+                            <p>App connects you talented people around world .please download it from play store</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+        </div>
+    </div>
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="left">
+                    <h1>Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>shubhamawasu@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7038286912</p>
+                    <div class="small-icon">
+                         <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                         <a href="https://www.linkedin.com/in/shubham-wasu-21a53b191/"><i class="fa-brands fa-linkedin"></i></a>
+                         <a href="https://api.whatsapp.com/send?phone=7038286912&text=Hello%20from%20my%20portfolio!" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+
+                         <a href="https://www.instagram.com/its_shubham_wasu/"><i class="fa-brands fa-instagram"></i></a>
+                         <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                     </div>
+                     <a href="#" class="btn btn2 downloadbtn">Download Resume</a>
+                </div>
+                <div class="right">
+                  <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Enter message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2 submit-btn">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablink = document.getElementsByClassName('tab-links');
+        var tabcontent = document.getElementsByClassName('tab-content');
+        function opentab(tabname) {
+            for (t of tablink) {
+                t.classList.remove('active-link');
+            }
+            for (t of tabcontent) {
+                t.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab')
+        }
+    </script>
+    <script>
+        var temp=document.getElementById('sidemenu');
+        function closeSideNav()
+        {
+            temp.style.right="-200px";
+        }
+        function openSideNav()
+        {
+            temp.style.right="0px"
+        }
+    </script>
+</body>
+
+</html>
